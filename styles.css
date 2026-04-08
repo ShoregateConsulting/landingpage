@@ -1,0 +1,619 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #222;
+}
+.container {
+    max-width: 900px;
+    margin: 18px auto 10px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    padding: 18px 14px 14px 14px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 12px;
+}
+.intro-photo {
+    display: block;
+    margin: 0 auto 24px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 12px;
+}
+.service {
+    flex: 1 1 260px;
+    background: #f3f6fa;
+    border-radius: 10px;
+    padding: 22px 16px 18px 16px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    margin-bottom: 0;
+    position: relative;
+}
+.service-photo {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+h2 {
+    font-size: 1.4em;
+    color: #1a3d6d;
+    margin-top: 0;
+}
+ul {
+    padding-left: 18px;
+}
+.cta {
+    margin-top: 24px;
+    text-align: center;
+}
+.cta button,
+.btn-primary,
+.btn-main {
+    background: #1a3d6d !important;
+    color: #fff !important;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.cta button:hover,
+.btn-primary:hover,
+.btn-main:hover {
+    background: #17406a !important;
+}
+section {
+    margin-bottom: 10px !important;
+}
+header.bg-blue-900, footer.bg-blue-900 {
+    background: #17406a !important;
+    color: #fff !important;
+}
+header.bg-blue-900 a, footer.bg-blue-900 a {
+    color: #a3d8ff !important;
+}
+header.bg-blue-900 .text-white, footer.bg-blue-900 .text-white {
+    color: #fff !important;
+}
+header.bg-blue-900 .text-blue-300, footer.bg-blue-900 .text-blue-300 {
+    color: #a3d8ff !important;
+}
+
+/* Header Phone Styles */
+.header-phone {
+    display: block;
+}
+
+.header-phone a:hover {
+    color: #a3d8ff !important;
+}
+
+/* FIX #1: Header Width and Layout */
+header > div {
+    max-width: 1400px !important;
+}
+
+/* FIX #2: Profile Photo Size */
+.credentials-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1e40af;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.credentials-text {
+    text-align: left;
+}
+
+.credentials-text h2 {
+    margin-bottom: 10px;
+}
+
+.credentials-badge {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.credential-item {
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: 1px solid #93c5fd;
+}
+
+/* FIX #3: FAQ Section Styles */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #1e40af;
+    margin: 0 0 12px 0;
+    cursor: default;
+}
+
+.faq-answer {
+    color: #374151;
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* FIX #4: Footer Styles */
+footer.bg-blue-900 {
+    position: static !important;
+    background: #17406a !important;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-column h3 {
+    color: white !important;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.footer-column p {
+    color: #a3d8ff !important;
+}
+
+.footer-column strong {
+    color: white !important;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: inline-block;
+    transition: transform 0.2s;
+    color: #a3d8ff !important;
+}
+
+.footer-links a:hover {
+    transform: translateX(4px);
+    color: white !important;
+}
+
+.btn-footer {
+    display: inline-block;
+    background: #fff !important;
+    color: #17406a !important;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+.btn-footer:hover {
+    background: #e0f2fe !important;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    text-align: center;
+    color: #a3d8ff !important;
+}
+
+.footer-bottom p {
+    color: #a3d8ff !important;
+}
+
+/* Additional styles for restructured services section */
+.problem-box {
+    background: #fef2f2;
+    border-left: 4px solid #dc2626;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+}
+
+.problem-box h4 {
+    margin: 0;
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
+}
+
+.problem-box p {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 0.95em;
+}
+
+.outcome-box {
+    background: #eff6ff;
+    border-left: 4px solid #1e40af;
+    padding: 12px 14px;
+    margin-top: 18px;
+    border-radius: 6px;
+}
+
+.outcome-box p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Ensure service cards have consistent spacing */
+.service ul {
+    margin-bottom: 14px;
+}
+
+.service ul li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+/* SMB Value Proposition Section Styles */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+}
+
+.comparison-column {
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.comparison-column.big-firms {
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+}
+
+.comparison-column.shoregate {
+    background: #eff6ff;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.comparison-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.comparison-item:hover {
+    transform: translateX(4px);
+}
+
+.comparison-item.negative {
+    background: #fefefe;
+}
+
+.comparison-item.positive {
+    background: white;
+}
+
+.icon-circle {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.negative-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.positive-icon {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.comparison-item h4 {
+    margin: 0 0 4px 0;
+    font-size: 1em;
+}
+
+.comparison-item p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Benefits Banner */
+.benefits-banner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    padding: 20px 24px 22px 24px;
+    border-radius: 12px;
+    margin-top: 40px;
+    color: white;
+}
+
+.benefits-banner h3 {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 1.3em;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 12px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.benefit-item:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.benefit-icon {
+    font-size: 1.8em;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.benefit-item p {
+    color: white;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.3;
+}
+
+.benefit-item strong {
+    font-size: 0.95em;
+    display: block;
+    margin-bottom: 3px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1100px) {
+    .header-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    header div[style*="justify-content: space-between"] {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+    
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 14px !important;
+        font-size: 0.95em !important;
+    }
+    
+    .credentials-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+    }
+    
+    .credentials-text {
+        text-align: center;
+    }
+    
+    .credentials-text h2 {
+        font-size: 1.8em;
+    }
+    
+    .credentials-badge {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .credential-item {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+    
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .comparison-column.big-firms {
+        order: 2;
+    }
+    
+    .comparison-column.shoregate {
+        order: 1;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .benefits-banner {
+        padding: 18px 16px 20px 16px;
+    }
+    
+    .benefits-banner h3 {
+        font-size: 1.2em;
+        margin-bottom: 14px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .problem-box, .outcome-box {
+        padding: 10px 12px;
+    }
+    
+    .problem-box p, .outcome-box p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 800px) {
+    .services {
+        flex-direction: column;
+    }
+    .container {
+        padding: 18px 4vw 14px 4vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-photo {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    .credentials-text h2 {
+        font-size: 1.5em;
+    }
+    
+    .credential-item {
+        font-size: 0.75em;
+    }
+    
+    .comparison-item {
+        padding: 10px;
+    }
+    
+    .icon-circle {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+    
+    .comparison-item h4 {
+        font-size: 0.95em;
+    }
+    
+    .comparison-item p {
+        font-size: 0.85em;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .faq-item {
+        padding: 16px 18px;
+    }
+    
+    .faq-question {
+        font-size: 1.05em;
+    }
+}
+/* FOOTER FIX - Add this to the END of your styles.css */
+
+.footer-custom {
+    background: #17406a !important;
+    color: white !important;
+    padding: 32px 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+}
+
+.footer-heading {
+    color: white !important;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 16px 0 !important;
+}
+
+.footer-text {
+    color: #a3d8ff !important;
+    margin-bottom: 12px;
+}
+
+.footer-text strong {
+    color: white !important;
+}
+
+.footer-link {
+    color: #a3d8ff !important;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white !important;
+    text-decoration: underline;
+}

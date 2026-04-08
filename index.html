@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DE88TRRM15"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DE88TRRM15');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shoregate Consulting: AI-powered solutions for SMBs. Boost efficiency with custom no-code apps, vibe coding, and AI automation.">
+    <meta name="keywords" content="AI consulting, SMB AI solutions, no-code development, vibe coding, AI automation">
+    <meta name="author" content="Tony D'Alessandro">
+    <link href="styles.css" rel="stylesheet">
+    <title>Shoregate Consulting | AI Solutions for SMBs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+      // Smooth scroll and offset for fixed header
+      document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+              e.preventDefault();
+              const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 6;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+          });
+        });
+      });
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-3" style="position:fixed; top:0; left:0; width:100%; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 0 24px;">
+            <div style="display: flex; align-items: center;">
+                <a href="#home"><img src="shoregate_logo.png" alt="Shoregate Consulting Logo" style="height:56px; margin-right: 18px; display:block;" /></a>
+                <div>
+                    <h1 class="text-3xl font-bold m-0">Shoregate Consulting</h1>
+                    <p class="text-lg mt-1 mb-0">AI-Powered Solutions to Grow Your Small Business</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 24px;">
+                <div class="header-phone" style="text-align: right;">
+                    <div style="font-size: 0.85em; color: #a3d8ff;">Call or Text</div>
+                    <a href="tel:+16098488505" style="font-size: 1.3em; font-weight: bold; color: white; text-decoration: none;">(609) 848-8505</a>
+                </div>
+                <nav>
+                    <ul style="display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 1.1em;">
+                        <li><a href="#home" class="hover:underline text-white">Home</a></li>
+                        <li><a href="#services" class="hover:underline text-white">Services</a></li>
+                        <li><a href="#products" class="hover:underline text-white">Products</a></li>
+                        <li><a href="#proof" class="hover:underline text-white">Proof</a></li>
+                        <li><a href="#contact" class="hover:underline text-white">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div style="height:90px;"></div>
+    <section id="home" class="bg-gray-100 py-5 text-center" style="scroll-margin-top:90px;">
+        <!-- Photo and Credentials Section -->
+        <div class="credentials-section">
+            <img src="headshot.png" alt="Tony D'Alessandro - AI Consultant" class="profile-photo" />
+            <div class="credentials-text">
+                <h2 class="text-3xl font-bold text-blue-900 mb-2">Level Up Your SMB with AI</h2>
+                <div class="credentials-badge">
+                    <span class="credential-item">✓ 40+ Years IT Leadership</span>
+                    <span class="credential-item">✓ AI Strategy Expert</span>
+                    <span class="credential-item">✓ Trusted by 15+ SMBs</span>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-base text-gray-700 mb-5 max-w-3xl mx-auto leading-snug" style="line-height:1.35;">Your competitors are using AI to save time, cut costs, and win customers. With 40+ years in IT and expertise in AI, I build custom solutions to help your business thrive, no tech giant budget required.</p>
+        <a href="#contact" class="btn-main font-semibold">Get My Free AI Assessment</a>
+    </section>
+
+    <!-- Services Section (RESTRUCTURED WITH PROBLEM-SOLUTION-OUTCOME) -->
+    <section id="services" class="py-6 bg-gray-100" style="scroll-margin-top:90px;">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">How I Help SMBs Succeed</h2>
+            <div class="flex flex-wrap gap-8 justify-center services">
+                
+                <!-- AI Readiness Assessment -->
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <img src="business_meeting_modern_office.jpg" alt="Business meeting in a modern office, representing AI Readiness Assessment" class="service-photo mb-4 rounded" />
+                    
+                    <!-- Problem Statement -->
+                    <div class="problem-box">
+                        <h4 class="text-sm font-bold text-red-700 mb-2">THE CHALLENGE:</h4>
+                        <p class="text-gray-800 font-semibold mb-4">"We know AI could help our business, but we're drowning in options and don't know where to start."</p>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">AI Readiness Assessment</h3>
+                    <p class="text-gray-700 mb-4">Get crystal-clear direction on exactly where AI can deliver the biggest impact for YOUR business—no guesswork, no wasted investment.</p>
+                    
+                    <p class="text-gray-700 font-semibold mb-2">You'll receive:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Prioritized AI opportunities ranked by ROI potential</li>
+                        <li>90-day implementation roadmap tailored to your business</li>
+                        <li>Quick-win projects you can start immediately</li>
+                    </ul>
+                    
+                    <!-- Outcome -->
+                    <div class="outcome-box">
+                        <p class="text-blue-900 font-bold">✓ THE OUTCOME: A clear path forward and confidence in your first AI investment</p>
+                    </div>
+                </div>
+                
+                <!-- Quick-Win AI Pilots -->
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <img src="ai_pilot.png" alt="AI pilot project illustration, symbolizing Quick-Win AI Pilots" class="service-photo mb-4 rounded" />
+                    
+                    <!-- Problem Statement -->
+                    <div class="problem-box">
+                        <h4 class="text-sm font-bold text-red-700 mb-2">THE CHALLENGE:</h4>
+                        <p class="text-gray-800 font-semibold mb-4">"We're worried about spending $50K on AI consulting only to get a report that sits on a shelf."</p>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Quick-Win AI Pilots</h3>
+                    <p class="text-gray-700 mb-4">See real ROI in 4-6 weeks with low-risk pilot projects that solve actual business problems—not just theory.</p>
+                    
+                    <p class="text-gray-700 font-semibold mb-2">Proven pilot examples:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>AI chatbot handling 70% of common customer questions</li>
+                        <li>Automated reporting saving 10+ hours per week</li>
+                        <li>Document processing reducing errors by 80%</li>
+                    </ul>
+                    
+                    <!-- Outcome -->
+                    <div class="outcome-box">
+                        <p class="text-blue-900 font-bold">✓ THE OUTCOME: A working solution, measurable results, and proof AI works for you</p>
+                    </div>
+                </div>
+                
+                <!-- AI Strategy Workshops -->
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <img src="consultants_around_table.jpg" alt="Consultants around a table, representing AI Strategy Workshops" class="service-photo mb-4 rounded" />
+                    
+                    <!-- Problem Statement -->
+                    <div class="problem-box">
+                        <h4 class="text-sm font-bold text-red-700 mb-2">THE CHALLENGE:</h4>
+                        <p class="text-gray-800 font-semibold mb-4">"Our team is skeptical about AI—they think it's overhyped or will replace their jobs."</p>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">AI Strategy Workshops</h3>
+                    <p class="text-gray-700 mb-4">Transform fear and confusion into competitive advantage with hands-on workshops that get your team aligned and excited about AI.</p>
+                    
+                    <p class="text-gray-700 font-semibold mb-2">Interactive sessions cover:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>AI trends that actually matter for your industry</li>
+                        <li>High-impact use cases for your specific operations</li>
+                        <li>Building buy-in and an AI-ready culture</li>
+                    </ul>
+                    
+                    <!-- Outcome -->
+                    <div class="outcome-box">
+                        <p class="text-blue-900 font-bold">✓ THE OUTCOME: A unified team with a shared AI vision and strategic roadmap</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SMB Value Proposition Section -->
+    <section id="why-shoregate" class="py-8 bg-white" style="scroll-margin-top:90px;">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-3">Why SMBs Choose Shoregate Over Big Consulting Firms</h2>
+            <p class="text-lg text-gray-600 text-center mb-8 max-w-3xl mx-auto">You don't need a $100K budget to compete with AI. You need a partner who understands small business realities.</p>
+            
+            <div class="comparison-grid">
+                <!-- Left Column: Big Firms -->
+                <div class="comparison-column big-firms">
+                    <h3 class="text-xl font-bold text-gray-500 mb-6 text-center">Big Consulting Firms</h3>
+                    
+                    <div class="comparison-item negative">
+                        <div class="icon-circle negative-icon">✗</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">$50K+ Minimum Engagements</h4>
+                            <p class="text-gray-600 text-sm">Enterprise pricing that excludes most SMBs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item negative">
+                        <div class="icon-circle negative-icon">✗</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">6-12 Month Timelines</h4>
+                            <p class="text-gray-600 text-sm">By the time they deliver, your needs have changed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item negative">
+                        <div class="icon-circle negative-icon">✗</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">PowerPoints, Not Solutions</h4>
+                            <p class="text-gray-600 text-sm">You get strategy decks, but no implementation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item negative">
+                        <div class="icon-circle negative-icon">✗</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">Junior Consultants Do the Work</h4>
+                            <p class="text-gray-600 text-sm">You pay for partners but get fresh graduates</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item negative">
+                        <div class="icon-circle negative-icon">✗</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">Complex Jargon & Buzzwords</h4>
+                            <p class="text-gray-600 text-sm">Impressive vocabulary, unclear next steps</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Shoregate -->
+                <div class="comparison-column shoregate">
+                    <h3 class="text-xl font-bold text-blue-900 mb-6 text-center">Shoregate Consulting</h3>
+                    
+                    <div class="comparison-item positive">
+                        <div class="icon-circle positive-icon">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">SMB-Friendly Pricing</h4>
+                            <p class="text-gray-700 text-sm">Projects start at $5K with flexible payment options</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item positive">
+                        <div class="icon-circle positive-icon">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Results in Weeks, Not Quarters</h4>
+                            <p class="text-gray-700 text-sm">Working pilots in 4-6 weeks, full projects in 8-12</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item positive">
+                        <div class="icon-circle positive-icon">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">We Build AND Implement</h4>
+                            <p class="text-gray-700 text-sm">You get working solutions, not just recommendations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item positive">
+                        <div class="icon-circle positive-icon">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Direct Access to 40+ Years Expertise</h4>
+                            <p class="text-gray-700 text-sm">You work directly with me—no handoffs to juniors</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-item positive">
+                        <div class="icon-circle positive-icon">✓</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Plain English Explanations</h4>
+                            <p class="text-gray-700 text-sm">Clear, actionable guidance you can actually use</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Benefits Banner -->
+            <div class="benefits-banner">
+                <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Plus, You Get:</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🤝</span>
+                        <p><strong>No Long-Term Contracts</strong><br>Month-to-month flexibility</p>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">💰</span>
+                        <p><strong>Transparent Pricing</strong><br>No hidden fees or scope creep</p>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">⚡</span>
+                        <p><strong>Rapid Response Time</strong><br>Emails answered within 24 hours</p>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🎯</span>
+                        <p><strong>ROI-Focused</strong><br>Every solution pays for itself</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center mt-8">
+                <p class="text-lg text-gray-700 mb-4 font-semibold">Ready to work with a consultant who gets small business?</p>
+                <a href="#contact" class="btn-main font-semibold">Start Your Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-6 bg-gray-100" style="scroll-margin-top:90px;">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our AI-Powered Products</h2>
+            <div class="flex flex-wrap gap-8 justify-center services">
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-900">BizResearchPro - Market Research in Minutes</h3>
+                    <p class="text-gray-700">Complete weeks of market research in minutes with 10 AI-powered analysis modules</p>
+                    <ul class="list-disc list-inside text-gray-700 my-4">
+                        <li>Market scans</li>
+                        <li>Competitor intel</li>
+                        <li>MVP validation</li>
+                        <li>Blue Ocean strategy</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-2.5 py-0.5 rounded">Most Popular</span>
+                    </div>
+                    <a href="https://bizresearchpro-a2e7hacvcqa5gbb4.eastus-01.azurewebsites.net/index.html" target="_blank" class="btn-main font-semibold block text-center mt-4">Start Free Trial</a>
+                </div>
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-900">InvestmentIQ - S&P 500 Company Analysis</h3>
+                    <p class="text-gray-700">McKinsey-level strategic analysis for any S&P 500 company—instantly</p>
+                    <ul class="list-disc list-inside text-gray-700 my-4">
+                        <li>Financial analysis</li>
+                        <li>Market positioning</li>
+                        <li>Competitive intelligence</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded">For Investors</span>
+                    </div>
+                    <a href="https://investmentiq.azurewebsites.net" target="_blank" class="btn-main font-semibold block text-center mt-4">Analyze a Company</a>
+                </div>
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-900">AuditSentinel - AI-Assisted Audit Prep</h3>
+                    <p class="text-gray-700">Save hours on audit preparation with AI-powered news analysis and IFRS insights</p>
+                    <ul class="list-disc list-inside text-gray-700 my-4">
+                        <li>Automated news scanning</li>
+                        <li>Impact assessment</li>
+                        <li>Ready-to-use reports</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="bg-green-100 text-green-800 text-sm font-semibold px-2.5 py-0.5 rounded">For Auditors</span>
+                    </div>
+                    <a href="https://shoregate-auditsentinel.azurewebsites.net/" target="_blank" class="btn-main font-semibold block text-center mt-4">Try Free</a>
+                </div>
+                <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-900">SWOTify 2.0 - Strategic Analysis Made Simple</h3>
+                    <p class="text-gray-700">Enterprise-level SWOT analysis with implementation roadmaps in seconds</p>
+                    <ul class="list-disc list-inside text-gray-700 my-4">
+                        <li>Executive summaries</li>
+                        <li>Competitive benchmarking</li>
+                        <li>Real-time updates</li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="bg-purple-100 text-purple-800 text-sm font-semibold px-2.5 py-0.5 rounded">Newly Upgraded</span>
+                    </div>
+                    <a href="https://shoregate-swotify.azurewebsites.net/" target="_blank" class="btn-main font-semibold block text-center mt-4">Analyze Now - Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof of Expertise Section -->
+    <section id="proof" class="py-6 bg-blue-50" style="scroll-margin-top:90px;">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Proven Results with AI</h2>
+            <p class="text-lg text-gray-600 text-center mb-6">With over 40 years in IT and a passion for AI, I’ve built tools that deliver real business impact:</p>
+            <ul class="list-disc list-inside text-gray-600 max-w-2xl mx-auto">
+                <li><strong>Accelerated Audit Preparation:</strong> Developed an AI tool that helps auditing firms speed up audit prep by analyzing news for financial reporting risks.</li>
+                <li><strong>Competitive Intelligence:</strong> Created solutions that generate high-quality competitive intelligence reports—on par with those from top-tier consultancies.</li>
+                <li><strong>Rapid Web Launches:</strong> Empower businesses to launch professional websites and landing pages in minutes, not days, by leveraging today’s powerful no-code and low-code tools.</li>
+            </ul>
+            <div class="cta">
+                <p><strong>Ready to unlock the potential of AI for your business?</strong></p>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get My Free AI Assessment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-6 bg-white" style="scroll-margin-top:90px;">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Let’s Transform Your Business with AI</h2>
+            <p class="text-lg text-gray-600 mb-6">Get Your Free AI Opportunity Assessment (valued at $500).<br>Find out if AI can save your business 10+ hours per week.</p>
+            <form action="https://formspree.io/f/xqabrqrw" method="POST" class="max-w-lg mx-auto">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-lg" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-lg" required>
+                <textarea name="message" placeholder="Tell me about your business needs" class="w-full p-3 mb-4 border rounded-lg" rows="4" required></textarea>
+                <input type="hidden" name="_subject" value="Shoregate Website Contact" />
+                <button type="submit" class="btn-main font-semibold">Send Message</button>
+            </form>
+            <p class="text-gray-600 mt-4">Or book directly: <a href="https://calendly.com/shoregateconsulting" class="text-blue-600 underline">Schedule a Call</a></p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-8 bg-gray-50" style="scroll-margin-top:90px;">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How much do your services cost?</h3>
+                    <div class="faq-answer">
+                        <p>Projects typically start at $5,000 for AI Readiness Assessments. Quick-win pilot projects range from $8,000-$15,000 depending on complexity. Strategy workshops start at $3,000. I offer flexible payment plans and month-to-month arrangements—no long-term contracts required.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How long does a typical project take?</h3>
+                    <div class="faq-answer">
+                        <p>AI Readiness Assessments: 2-3 weeks. Pilot projects: 4-6 weeks. Strategy workshops can be delivered in a single day or spread over multiple sessions. Unlike big consulting firms that take 6-12 months, I focus on delivering rapid, actionable results.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need technical expertise to work with you?</h3>
+                    <div class="faq-answer">
+                        <p>Not at all! I specialize in working with non-technical business owners. I explain everything in plain English and handle all the technical implementation. Your job is to focus on your business goals—I'll handle the AI complexity.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What if AI doesn't work for my business?</h3>
+                    <div class="faq-answer">
+                        <p>That's exactly why I start with an AI Readiness Assessment. I'll be honest if AI isn't the right fit or if the timing isn't optimal. I'd rather tell you "not yet" than take your money for something that won't deliver ROI. For pilot projects, you can cancel within the first 2 weeks if you're not satisfied.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What industries do you work with?</h3>
+                    <div class="faq-answer">
+                        <p>I work with SMBs across manufacturing, professional services, retail, healthcare, finance, and more. My 40+ years in IT means I've seen diverse business challenges. The AI strategies I develop are customized to your specific industry and business model.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How is this different from using ChatGPT myself?</h3>
+                    <div class="faq-answer">
+                        <p>ChatGPT is a tool—like having a hammer. I provide the blueprint, the expertise to use the right tools for your specific needs, custom implementation, and integration with your existing systems. Plus, I bring 40+ years of IT strategy to ensure AI actually solves your business problems, not just creates cool demos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer ongoing support after implementation?</h3>
+                    <div class="faq-answer">
+                        <p>Yes! I offer flexible monthly retainer arrangements for ongoing support, optimization, and training. Many clients start with a pilot project, then transition to a monthly arrangement as they scale their AI usage. No long-term commitments—month-to-month only.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What if I'm not sure where to start?</h3>
+                    <div class="faq-answer">
+                        <p>Perfect—that's exactly what the free consultation is for. We'll discuss your business challenges, and I'll give you honest feedback on whether AI can help and what the best first step would be. No pressure, no sales pitch—just practical guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container mx-auto px-4">
+            <div class="footer-grid">
+                
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Shoregate Consulting</h3>
+                    <p class="footer-text">AI-powered solutions for growing SMBs</p>
+                    <p class="footer-text">
+                        <strong>Location:</strong><br>
+                        Voorhees, NJ
+                    </p>
+                    <p class="footer-text">
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+16098488505" class="footer-link">(609) 848-8505</a>
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#why-shoregate" class="footer-link">Why Choose Us</a></li>
+                        <li><a href="#products" class="footer-link">Products</a></li>
+                        <li><a href="#proof" class="footer-link">Proven Results</a></li>
+                        <li><a href="#faq" class="footer-link">FAQ</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Connect -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Connect With Me</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/tonydalessandro1/" class="footer-link" target="_blank" rel="noopener">
+                                LinkedIn Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:shoregate.consulting@gmail.com" class="footer-link">
+                                shoregate.consulting@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://calendly.com/shoregateconsulting" class="footer-link" target="_blank" rel="noopener">
+                                Schedule a Call
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- CTA Column -->
+                <div class="footer-column">
+                    <h3 class="footer-heading">Ready to Get Started?</h3>
+                    <p class="footer-text">Book your free 30-minute AI consultation today.</p>
+                    <a href="#contact" class="btn-footer">Get My Free AI Assessment</a>
+                </div>
+                
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shoregate Consulting. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div style="height:0px;"></div>
+
+    <div style="height:48px;"></div>
+</body>
+</html>

@@ -387,7 +387,7 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-8">Let’s Transform Your Business with AI</h2>
             <p class="text-lg text-gray-600 mb-6">Get Your Free AI Opportunity Assessment (valued at $500).<br>Find out if AI can save your business 10+ hours per week.</p>
-            <form action="https://formsubmit.co/shoregate.consulting@gmail.com" method="POST" class="max-w-lg mx-auto">
+            <form id="contact-form" action="https://formsubmit.co/shoregate.consulting@gmail.com" method="POST" class="max-w-lg mx-auto">
                 <input type="hidden" name="_subject" value="Shoregate Website Contact" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
@@ -396,6 +396,7 @@
                 <textarea name="message" placeholder="Tell me about your business needs" class="w-full p-3 mb-4 border rounded-lg" rows="4" required></textarea>
                 <button type="submit" class="btn-main font-semibold">Send Message</button>
             </form>
+            <div id="form-status" style="display:none; margin-top:10px; font-weight:bold;"></div>
             <p class="text-gray-600 mt-4">Or book directly: <a href="https://calendly.com/shoregateconsulting" class="text-blue-600 underline">Schedule a Call</a></p>
         </div>
     </section>
@@ -538,5 +539,60 @@
     <div style="height:0px;"></div>
 
     <div style="height:48px;"></div>
+
+    <!-- Contact Form Debug Script -->
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = this;
+        const statusDiv = document.getElementById('form-status');
+        const formData = new FormData(form);
+
+        // Log form data
+        console.log('=== FormSubmit Debug ===');
+        console.log('Form action URL:', form.action);
+        console.log('Form fields:');
+        for (let [key, value] of formData.entries()) {
+            console.log(`  ${key}: ${value}`);
+        }
+
+        // Show sending status
+        statusDiv.style.display = 'block';
+        statusDiv.style.color = '#f59e0b';
+        statusDiv.textContent = 'Sending...';
+
+        // Submit via fetch
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            console.log('Response status:', response.status);
+            console.log('Response ok:', response.ok);
+            return response.json();
+        })
+        .then(data => {
+            console.log('Response body:', JSON.stringify(data, null, 2));
+
+            if (data.success) {
+                statusDiv.style.color = '#10b981';
+                statusDiv.textContent = '✓ Message sent successfully! Check your inbox (and spam folder).';
+                form.reset();
+            } else {
+                statusDiv.style.color = '#ef4444';
+                statusDiv.textContent = '✗ Error: ' + (data.message || 'Unknown error. Check console.');
+            }
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            statusDiv.style.color = '#ef4444';
+            statusDiv.textContent = '✗ Network error: ' + error.message;
+        });
+    });
+    </script>
 </body>
 </html>

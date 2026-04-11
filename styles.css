@@ -3,108 +3,125 @@ body {
     margin: 0;
     background: #f9f9f9;
     color: #222;
+    overflow-x: hidden;
 }
-.container {
-    max-width: 900px;
-    margin: 18px auto 10px auto;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-    padding: 18px 14px 14px 14px;
+
+/* Header Styles */
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 12px;
-}
-.intro-photo {
-    display: block;
-    margin: 0 auto 24px auto;
-    max-width: 90%;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-}
-.services {
+
+.header-main {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     gap: 24px;
-    margin-top: 12px;
 }
-.service {
-    flex: 1 1 260px;
-    background: #f3f6fa;
-    border-radius: 10px;
-    padding: 22px 16px 18px 16px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
-    margin-bottom: 0;
-    position: relative;
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
-.service-photo {
-    width: 100%;
-    max-height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 14px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+
+.logo-img {
+    height: 56px;
+    display: block;
 }
-h2 {
-    font-size: 1.4em;
-    color: #1a3d6d;
-    margin-top: 0;
+
+.header-text h1 {
+    margin: 0;
 }
-ul {
-    padding-left: 18px;
+
+.header-text p {
+    margin: 0;
 }
-.cta {
-    margin-top: 24px;
-    text-align: center;
-}
-.cta button,
-.btn-primary,
-.btn-main {
-    background: #1a3d6d !important;
-    color: #fff !important;
-    border: none;
-    padding: 14px 30px;
-    font-size: 1.1em;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-.cta button:hover,
-.btn-primary:hover,
-.btn-main:hover {
-    background: #17406a !important;
-}
-section {
-    margin-bottom: 10px !important;
-}
-header.bg-blue-900, footer.bg-blue-900 {
-    background: #17406a !important;
-    color: #fff !important;
-}
-header.bg-blue-900 a, footer.bg-blue-900 a {
-    color: #a3d8ff !important;
-}
-header.bg-blue-900 .text-white, footer.bg-blue-900 .text-white {
-    color: #fff !important;
-}
-header.bg-blue-900 .text-blue-300, footer.bg-blue-900 .text-blue-300 {
-    color: #a3d8ff !important;
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 /* Header Phone Styles */
 .header-phone {
     display: block;
+    text-align: right;
 }
 
-.header-phone a:hover {
+.phone-label {
+    font-size: 0.85em;
+    color: #a3d8ff;
+}
+
+.phone-link {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.phone-link:hover {
     color: #a3d8ff !important;
 }
 
-/* FIX #1: Header Width and Layout */
-header > div {
-    max-width: 1400px !important;
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* FIX #2: Profile Photo Size */
@@ -149,6 +166,115 @@ header > div {
     font-size: 0.9em;
     font-weight: 600;
     border: 1px solid #93c5fd;
+}
+
+/* Container and base styles */
+.container {
+    max-width: 900px;
+    margin: 18px auto 10px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    padding: 18px 14px 14px 14px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 12px;
+}
+
+.intro-photo {
+    display: block;
+    margin: 0 auto 24px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 12px;
+}
+
+.service {
+    flex: 1 1 260px;
+    background: #f3f6fa;
+    border-radius: 10px;
+    padding: 22px 16px 18px 16px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    margin-bottom: 0;
+    position: relative;
+}
+
+.service-photo {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #1a3d6d;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+.cta {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.cta button,
+.btn-primary,
+.btn-main {
+    background: #1a3d6d !important;
+    color: #fff !important;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta button:hover,
+.btn-primary:hover,
+.btn-main:hover {
+    background: #17406a !important;
+}
+
+section {
+    margin-bottom: 10px !important;
+}
+
+header.bg-blue-900, footer.bg-blue-900 {
+    background: #17406a !important;
+    color: #fff !important;
+}
+
+header.bg-blue-900 a, footer.bg-blue-900 a {
+    color: #a3d8ff !important;
+}
+
+header.bg-blue-900 .text-white, footer.bg-blue-900 .text-white {
+    color: #fff !important;
+}
+
+header.bg-blue-900 .text-blue-300, footer.bg-blue-900 .text-blue-300 {
+    color: #a3d8ff !important;
 }
 
 /* FIX #3: FAQ Section Styles */
@@ -445,146 +571,333 @@ footer.bg-blue-900 {
 }
 
 /* Mobile Responsiveness */
+
+/* Tablet and below */
 @media (max-width: 1100px) {
     .header-phone {
         display: none;
     }
+    
+    .header-container {
+        padding: 0 20px;
+    }
 }
 
+/* Mobile landscape and below */
 @media (max-width: 900px) {
-    header div[style*="justify-content: space-between"] {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 12px;
+    .header-brand h1 {
+        font-size: 1.5em !important;
     }
     
-    header nav ul {
-        flex-wrap: wrap;
-        gap: 14px !important;
-        font-size: 0.95em !important;
+    .header-brand p {
+        font-size: 0.85em !important;
     }
     
     .credentials-section {
         flex-direction: column;
         text-align: center;
         padding: 16px;
+        gap: 16px;
     }
-    
+
     .credentials-text {
         text-align: center;
     }
-    
+
     .credentials-text h2 {
         font-size: 1.8em;
     }
-    
+
     .credentials-badge {
         justify-content: center;
         gap: 8px;
     }
-    
+
     .credential-item {
         font-size: 0.8em;
         padding: 5px 10px;
     }
-    
+
     .comparison-grid {
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    
+
     .comparison-column.big-firms {
         order: 2;
     }
-    
+
     .comparison-column.shoregate {
         order: 1;
     }
-    
+
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
-    
+
     .benefits-banner {
         padding: 18px 16px 20px 16px;
     }
-    
+
     .benefits-banner h3 {
         font-size: 1.2em;
         margin-bottom: 14px;
     }
-    
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
-    
+
     .problem-box, .outcome-box {
         padding: 10px 12px;
     }
-    
+
     .problem-box p, .outcome-box p {
         font-size: 0.9em;
     }
+    
+    .service {
+        padding: 20px;
+    }
 }
 
+/* Mobile portrait */
 @media (max-width: 800px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .mobile-nav {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .mobile-nav.active {
+        max-height: 400px;
+        margin-top: 12px;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 0;
+        background: rgba(23, 64, 106, 0.98);
+        border-radius: 8px;
+        padding: 8px 0;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 12px 16px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
     .services {
         flex-direction: column;
     }
+    
     .container {
         padding: 18px 4vw 14px 4vw;
     }
+    
+    .service {
+        padding: 16px;
+    }
+    
+    .service-photo {
+        max-height: 150px;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    .text-3xl {
+        font-size: 1.5em !important;
+    }
 }
 
+/* Small mobile */
 @media (max-width: 600px) {
+    .header-container {
+        padding: 0 12px;
+    }
+    
+    .header-brand {
+        gap: 12px;
+    }
+    
+    .logo-img {
+        height: 44px;
+    }
+    
+    .header-text h1 {
+        font-size: 1.2em !important;
+    }
+    
+    .header-text p {
+        display: none;
+    }
+    
     .profile-photo {
         width: 80px !important;
         height: 80px !important;
     }
-    
+
     .credentials-text h2 {
         font-size: 1.5em;
     }
-    
+
     .credential-item {
         font-size: 0.75em;
+        padding: 4px 8px;
     }
     
+    .credentials-section {
+        padding: 12px;
+    }
+
     .comparison-item {
         padding: 10px;
     }
-    
+
     .icon-circle {
         width: 28px;
         height: 28px;
         font-size: 16px;
     }
-    
+
     .comparison-item h4 {
         font-size: 0.95em;
     }
-    
+
     .comparison-item p {
         font-size: 0.85em;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 24px;
     }
     
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .benefit-item {
+        padding: 10px 6px;
+    }
+    
+    .benefit-icon {
+        font-size: 1.5em;
+    }
+    
+    .benefit-item p {
+        font-size: 0.75em;
+    }
+
     .faq-item {
         padding: 16px 18px;
     }
-    
+
     .faq-question {
         font-size: 1.05em;
     }
+    
+    .cta button,
+    .btn-primary,
+    .btn-main {
+        padding: 12px 20px;
+        font-size: 1em;
+        width: 100%;
+    }
+    
+    .service {
+        padding: 14px;
+    }
+    
+    input, textarea {
+        font-size: 16px; /* Prevents iOS zoom on input */
+    }
+    
+    #contact-form input,
+    #contact-form textarea {
+        padding: 12px;
+        font-size: 16px;
+    }
 }
-/* FOOTER FIX - Add this to the END of your styles.css */
 
+/* Extra small mobile */
+@media (max-width: 400px) {
+    .logo-img {
+        height: 38px;
+    }
+    
+    .header-text h1 {
+        font-size: 1em !important;
+    }
+    
+    .profile-photo {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
+    .credentials-text h2 {
+        font-size: 1.3em;
+    }
+    
+    .credential-item {
+        font-size: 0.7em;
+        padding: 3px 6px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefit-item {
+        padding: 12px;
+    }
+    
+    .comparison-grid {
+        gap: 16px;
+    }
+    
+    .service {
+        padding: 12px;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .nav-link {
+        min-height: 44px;
+    }
+    
+    .footer-links a {
+        padding: 8px 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* FOOTER FIX */
 .footer-custom {
     background: #17406a !important;
     color: white !important;

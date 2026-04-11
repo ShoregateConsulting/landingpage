@@ -31,38 +31,66 @@
               e.preventDefault();
               const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 6;
               window.scrollTo({ top: y, behavior: 'smooth' });
+              
+              // Close mobile menu if open
+              const mobileNav = document.querySelector('.mobile-nav');
+              const menuToggle = document.querySelector('.mobile-menu-toggle');
+              if (mobileNav && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+              }
             }
           });
         });
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        if (menuToggle && mobileNav) {
+          menuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            this.classList.toggle('active');
+            const isExpanded = this.classList.contains('active');
+            this.setAttribute('aria-expanded', isExpanded);
+          });
+        }
       });
     </script>
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Header -->
     <header class="bg-blue-900 text-white py-3" style="position:fixed; top:0; left:0; width:100%; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 0 24px;">
-            <div style="display: flex; align-items: center;">
-                <a href="#home"><img src="shoregate_logo.png" alt="Shoregate Consulting Logo" style="height:56px; margin-right: 18px; display:block;" /></a>
-                <div>
-                    <h1 class="text-3xl font-bold m-0">Shoregate Consulting</h1>
-                    <p class="text-lg mt-1 mb-0">AI-Powered Solutions to Grow Your Small Business</p>
+        <div class="header-container">
+            <div class="header-main">
+                <div class="header-brand">
+                    <a href="#home"><img src="shoregate_logo.png" alt="Shoregate Consulting Logo" class="logo-img" /></a>
+                    <div class="header-text">
+                        <h1 class="text-3xl font-bold m-0">Shoregate Consulting</h1>
+                        <p class="text-lg mt-1 mb-0">AI-Powered Solutions to Grow Your Small Business</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-phone">
+                        <div class="phone-label">Call or Text</div>
+                        <a href="tel:+16098488505" class="phone-link">(609) 848-8505</a>
+                    </div>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
                 </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 24px;">
-                <div class="header-phone" style="text-align: right;">
-                    <div style="font-size: 0.85em; color: #a3d8ff;">Call or Text</div>
-                    <a href="tel:+16098488505" style="font-size: 1.3em; font-weight: bold; color: white; text-decoration: none;">(609) 848-8505</a>
-                </div>
-                <nav>
-                    <ul style="display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 1.1em;">
-                        <li><a href="#home" class="hover:underline text-white">Home</a></li>
-                        <li><a href="#services" class="hover:underline text-white">Services</a></li>
-                        <li><a href="#products" class="hover:underline text-white">Products</a></li>
-                        <li><a href="#proof" class="hover:underline text-white">Proof</a></li>
-                        <li><a href="#contact" class="hover:underline text-white">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="mobile-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="hover:underline text-white nav-link">Home</a></li>
+                    <li><a href="#services" class="hover:underline text-white nav-link">Services</a></li>
+                    <li><a href="#products" class="hover:underline text-white nav-link">Products</a></li>
+                    <li><a href="#proof" class="hover:underline text-white nav-link">Proof</a></li>
+                    <li><a href="#contact" class="hover:underline text-white nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -320,7 +348,7 @@
                     <div class="mt-4">
                         <span class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-2.5 py-0.5 rounded">Most Popular</span>
                     </div>
-                    <a href="https://bizresearchpro-a2e7hacvcqa5gbb4.eastus-01.azurewebsites.net/index.html" target="_blank" class="btn-main font-semibold block text-center mt-4">Start Free Trial</a>
+                    <a href="https://shoregate-bizresearchpro.base44.app/login" target="_blank" class="btn-main font-semibold block text-center mt-4">Start Free Trial</a>
                 </div>
                 <div class="service bg-white rounded-lg p-8 shadow-md flex-1 max-w-sm">
                     <h3 class="text-xl font-semibold mb-4 text-blue-900">InvestmentIQ - S&P 500 Company Analysis</h3>

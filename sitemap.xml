@@ -20,13 +20,4 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://shoregateconsulting.com/blog-executive-metabolic-health.html" />
   </url>
 
-  <!-- External destinations (optional - helps search engines understand outbound links) -->
-  <!-- Today's Food Coach main site (referenced CTA) -->
-  <url>
-    <loc>https://todaysfoodcoach.com</loc>
-    <lastmod>2025-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
 </urlset>
